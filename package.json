@@ -1,0 +1,22 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "tasks.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PNdunguMaina/Unit-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PNdunguMaina/Unit-testing/issues"
+  },
+  "homepage": "https://github.com/PNdunguMaina/Unit-testing#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
