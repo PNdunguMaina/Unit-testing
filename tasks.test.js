@@ -1,4 +1,4 @@
-const {stringLength, reverseString} = require('./tasks');
+const {stringLength, reverseString, Calculator} = require('./tasks');
 test ('string char count', () => {
     // arrange
     const string = 'helloworld';
@@ -26,4 +26,68 @@ test ('take a string and return its reverse', () => {
     const strFunction = reverseString(string);
     // ascert
     expect(strFunction).toBe(reverseString(string));
+})
+
+test('properly add two numbers', () => {
+    // arrange
+    const x = 1;
+    const y = 2;
+
+    // act
+    const calculate = new Calculator();
+    const numFunction = calculate.add();
+
+    // ascert
+    expect (numFunction).toBe(3);
+})
+
+test('properly subtract two numbers', () => {
+    // arrange
+    const x = 1;
+    const y = 2;
+
+    // act
+    const calculate = new Calculator();
+    const numFunction = calculate.subtract();
+
+    // ascert
+    expect (numFunction).toBe(-1);
+})
+
+test('properly divide two numbers', () => {
+    // arrange
+    const x = 1;
+    const y = 2;
+
+    // act
+    const calculate = new Calculator();
+    const numFunction = calculate.divide();
+
+    // ascert
+    expect (numFunction).toBe(0.5);
+})
+
+test('properly multiply two numbers', () => {
+    // arrange
+    const x = 1;
+    const y = 2;
+
+    // act
+    const calculate = new Calculator();
+    const numFunction = calculate.multiply();
+
+    // ascert
+    expect (numFunction).toBe(2);
+})
+
+test ('return string with first character capitalized', () => {
+    // arrange
+    const string = 'hello';
+
+    // act
+    const strFunction = capitalize(string);
+
+    // ascert
+    expect (strFunction).toBe('Hello');
+
 })
