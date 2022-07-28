@@ -1,4 +1,4 @@
-const stringLength = require('./tasks');
+const {stringLength, reverseString} = require('./tasks');
 test ('string char count', () => {
     // arrange
     const string = 'helloworld';
@@ -17,4 +17,13 @@ test ('throw error if string char count not between 0 & 10', () => {
     }
     // ascert
     expect(strFunction).toThrowError()
+})
+
+test ('take a string and return its reverse', () => {
+    // arrange
+    const string = 'hello';
+    // act
+    const strFunction = reverseString(string);
+    // ascert
+    expect(strFunction).toBe(reverseString(string));
 })
